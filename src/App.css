@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  min-height: 10vh;
+  background-color: black;
+  color: white;
+} 
+
+.container{
+  margin: auto;  
+  overflow: hidden;
+  display: flex;
+}
+
+.videoComponents{
+  float: left;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+
+.resultBox{
+  float: right;
+  background-color: lightslategray;
+  width: 30%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.resultTitle{
+  text-align: center;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.dataPointBox{
+  overflow: hidden;
+  display: flex;
+  /* border: 1px solid black; */
+}
+
+/* On left side of resultBox */
+.dataPointNames{
+  width: 50%;
+  float: left;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-bottom-left-radius: 5px;
+}
+
+.dataPointNames ul{
+  list-style-type: none;
+  padding-left: 3px;
+  font-size: large;
+  font-weight: normal;
+}
+
+/* On right side of resultBox */
+.dataPointValues{
+  width: 50%;
+  float: right;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-bottom-right-radius: 5px;
+}
+
+.dataPointValues ul{
+  list-style-type: none;
+  text-align: right;
+  padding-right: 3px;
+  font-size: large;
+}
+
+footer{ 
+  width: 100vw;
+  margin-top: 75px;
+  text-align: center;
+}
+
+header{
+  text-align: left;
+}
+
+h1{
+  color: white;
+  background-color: black;
+  height: auto;
+  width: auto;
+}
+
+button{
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+.control_button{
+  margin-top: 10px;
+  height: 40px;
+  width: 80px;
+  margin-left: 5px;
+}
+
+.controls {
+  float: left;
+  height: 100%;
+  width: 100%;
+  margin-right: 0px;
+  align-content: center;
+  position: relative;
+}
+
+input{
+  font-family: monospace;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.about_page{
+  text-align: center;
+}
