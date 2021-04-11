@@ -72,27 +72,6 @@ function App() {
   const [intervalID, setIntervalID] = useState(0)
   var testing = 1
 
-{/*** WORKING TIMER BACKUP 
-
-  function play(){
-    setPlaying(true)
-    setIntervalID(setInterval(updateDisplay,17))
-  }
-
-  function updateDisplay(){
-    if(playing === true){
-      setFrame(parseInt(playerRef.current.getCurrentTime()) * 60)
-      console.log('Updating')
-    }
-  }
-
-  function pause(){
-    setPlaying(false)
-    setIntervalID(clearInterval(intervalID))
-  }
-
-*/}
-
   function play(){
     setPlaying(true)
     document.getElementById("play_button").disabled = true
