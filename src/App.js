@@ -75,6 +75,8 @@ function App() {
   function play(){
     setPlaying(true)
     document.getElementById("play_button").disabled = true
+    document.getElementById("prev_button").disabled = true
+    document.getElementById("next_button").disabled = true
     testing = frame
     setIntervalID(setInterval(updateDisplay,16.6))
   }
@@ -90,6 +92,8 @@ function App() {
   function pause(){ 
     setPlaying(false)
     document.getElementById("play_button").disabled = false
+    document.getElementById("prev_button").disabled = false
+    document.getElementById("next_button").disabled = false
     setIntervalID(clearInterval(intervalID))
   }
 
@@ -146,8 +150,8 @@ function App() {
                   <controls className="controls"> {/* Added this if broken remove */}
                     <button className="control_button" id="play_button" onClick={play}>Play</button>
                     <button className="control_button" id="pause_button" onClick={pause}>Pause</button>
-                    <button className="control_button" onClick={prevFrame}>Prev</button>
-                    <button className="control_button" onClick={nextFrame}>Next</button>
+                    <button className="control_button" id="prev_button" onClick={prevFrame}>Prev</button>
+                    <button className="control_button" id="next_button" onClick={nextFrame}>Next</button>
                   </controls>
                 </div>
               </div>
