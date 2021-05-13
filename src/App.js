@@ -14,8 +14,6 @@ function App() {
 
   // For initalizing the base frame and letting the functions reset the value
   const [frame, setFrame] = useState(1)
-  // var intervalID = 0
-  // var playPause = false
 
   const playerRef = useRef(null)
 
